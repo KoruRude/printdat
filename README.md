@@ -14,3 +14,7 @@ The bottom of the file output will produce:
 <img width="660" height="45" alt="image" src="https://github.com/user-attachments/assets/827b7f83-e49d-4046-ac29-04e1d9c5f66b" />
 
 This is fine, this is saying that the image was did not exactly generate a matrix that was divisible by 7 in the y direction.
+
+After the .dat file is generated, the .dat file and the PrintDat.bas file can be transfered to the computer capable of LPRINT (with printer connected) via GW-BASIC for printing the .dat file.
+To be clear: The PrintDat.bas file does not need to be replaced everytime the .dat file is changed as it prints based off ot the .dat file.
+Furthermore: you can do "ECHO BASIC PRINTDAT.BAS > PRINTDAT.BAT" so that the program can be ran by simply entering PRINTDAT at the command prompt.
