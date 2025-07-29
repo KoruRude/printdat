@@ -6,7 +6,7 @@ printFileName = input("Print File Name: ")
 im = Image.open(printFileName + "." + printFileType)
 px = im.load()
 imgWidth = int(input("Print Image Width (32-480): "))
-scaleFactor = im.size[0]/imgWidth
+scaleFactor = im.size[0]/(imgWidth)
 calibration = 51/42 #width divided by height
 
 #inputs 0-64
@@ -38,9 +38,9 @@ for y in range(int((im.size[1] / scaleFactor) * calibration)):
     for x in range(imgWidth):
         brt =  brightNes(int(x * scaleFactor), int(y * scaleFactor / calibration))
         if (matrixValue(brt, x + y)):
-            brt = False ## -dot
+            brt = True ## -dot
         else:
-            brt = True # -no dot
+            brt = False # -no dot
         #print(brt, end="")
         arrayOutput[y].append(brt)
 
