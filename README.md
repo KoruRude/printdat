@@ -1,6 +1,8 @@
 # printdat
 PrintDat is a python program that generates a data file (.dat) based off the value of select pixels in the image and then can be executed by PrintDat.bas (GW-BASIC program) and is designed to be used by an FX-80 dot-matrix printer.
 
+WARNING: Some GW-BASIC printer drivers change the output going to the printer and may cause unexpected results. I am currently dealing with this on a Tandy 1400 FD. (will likely re-write program to print in smaller group sizes. This will likely change the printdat.bas program.
+
 Use of the program looks like:
 
 <img width="969" height="83" alt="Screenshot 2025-07-28 002508" src="https://github.com/user-attachments/assets/da993c6b-a104-4575-8c58-be2c0a5ea3e1" />
